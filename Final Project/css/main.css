@@ -1,0 +1,253 @@
+/*GLOBAL SETTINGS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+width: 0 auto;
+font-family: 'Quicksand', sans-serif;
+font-size: 14px;
+line-height: 24px;
+}
+
+/*NAVIGATION*/
+#nav {
+  background-color: #E1E1E1;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 1px;
+  border-bottom: 5px #E1E1E1 solid;
+  text-align: center;
+}
+#navigation {
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  width: 1024px;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+li {
+  display: inline;
+  padding: 0 0 0 20px;
+}
+#nav a {
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+#nav a:hover {color:#D98C5E}
+
+/*TOP BANNER*/
+.main-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #41889E;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 0;
+}
+.cta-button {
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 40px 40px;
+  margin-left: 600px;
+  margin-top: 300px;
+  margin-bottom: 200px;
+  font-size: 30px;
+}
+
+.cta-button2 {
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  border: 3px solid white;
+  color: white ;
+  padding: 40px 40px;
+  margin-left: 200px;
+  margin-top: 500px;
+  margin-bottom: 380px;
+  font-size: 35px;
+}
+
+.cta-button3 {
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  border: 3px solid white;
+  color: white ;
+  padding: 40px 40px;
+  margin-right: 600px;
+  margin-top: 400px;
+  margin-bottom: 300px;
+  font-size: 35px;
+}
+.cta-button: hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+}
+hr {
+  border: 1px solid #262626;
+}
+
+/*FONTS*/
+h1 {
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+  color: #34495e;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+h3 {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+}
+p {
+  margin-top: 20px;
+}
+
+/*CONTAINERS*/
+.center-text {
+  width: 100%;
+}
+.about-container {
+  font-family: 'Quicksand', sans-serif;
+  width: 70%;
+  padding: 50px;
+  margin: 0 auto;
+}
+.fav-bkg{
+  background-color: #437D82;
+  width: 100%;
+}
+#fav-links {
+  font-family: 'Quicksand', sans-serif;
+  width: 70%;
+  padding: 50px;
+  margin: 0 auto;
+}
+.link-containers {
+  display: flex;
+  color: #fff;
+}
+.linksIcons {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+#divSocial {
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  padding: 50px;
+}
+#divSocialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.main-header {
+  padding-top:.5em;
+  padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #fff;
+  background: #DEAF93;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+}
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.main-footer {
+  font-family: 'Quicksand', sans-serif;
+  background: #DEAF93;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+/*IMAGES*/
+#divSocialIcons {
+ text-align: center;
+}
+.logo {
+  align-items: flex-start;
+ padding-right: 10px;
+}
+.profilePhoto {
+ display: block;
+ margin: 0 auto;
+ padding: 30px;
+}
+
+/*LINKS*/
+a:link {color: #ecf0f1;} /*UNVISITED LINK*/
+a:visited {color: #ecf0f1;} /*VISITED LINK*/
+a:hover {color: #ecf0f1;} /*MOUSE OVER LINK*/
+a:active {color: #ecf0f1;} /*SELECTED LINK*/
+
+@media (max-width: 800px) {
+ #nav {
+   height: 200px;
+ }
+ #navigation {
+   width: 100%;
+   display: inline-grid;
+   justify-content: center;
+   align-items: center;
+ }
+ .logo {
+   margin-bottom: 10px;
+   border-bottom: 1px solid #e2e2e2;
+ }
+ .main-banner {
+   margin-top: 200px;
+   background-image: url("../img/milo-700.jpg")
+ }
+ .center-text {
+   width: 100%;
+   text-align: center;
+ }
+ .about-container {
+   width: 100%;
+   padding: 20px;
+   margin: 0 auto;
+ }
+ #fav-links {
+   width: 100%;
+   padding: 20px;
+   margin: 0 auto;
+ }
+ .fav-bkg {
+   padding-bottom: 30px;
+ }
+ .profilePhoto {
+   display: block;
+   margin: 0 auto;
+   width: 250px;
+ }
+ .link-containers {
+   display: block;
+ }
+ .linksIcons {
+   width: 0 auto;
+   padding: 0;
+   margin-top: 30px;
+   margin-bottom: 20px;
+ }
+}
